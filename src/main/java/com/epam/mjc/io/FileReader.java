@@ -2,7 +2,6 @@ package com.epam.mjc.io;
 
 import java.io.*;
 
-
 public class FileReader {
 
     public Profile getDataFromFile(File file) {
@@ -27,6 +26,7 @@ public class FileReader {
                     case "Phone":
                         profile.setPhone(Long.parseLong(val));
                         break;
+                    default:break;
                 }
             }
         } catch (IOException e) {
